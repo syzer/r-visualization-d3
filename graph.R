@@ -1,10 +1,11 @@
+# neo 4j is preaty awesome for graph analitics
 install.packages('igraph', 'visNetwork', 'RNeo4j')
 library(igraph)
 library(visNetwork)
 library(RNeo4j)
 
 
-graph = startGraph("http://127.0.0.1:7474/db/data/",username="neo4j", password="password)
+graph = startGraph("http://127.0.0.1:7474/db/data/",username="neo4j", password="password")
 
 importSample(graph, "movies", input=F)
 
